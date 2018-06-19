@@ -1,24 +1,35 @@
-# README
+Rails-chat
+------
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Clone The Repository
+`$ git clone git@github.com:tuansaker1412/rails-chat.git`
 
-Things you may want to cover:
 
-* Ruby version
+#### Change directory
+`$ cd rails-chat`
 
-* System dependencies
+#### Install dependencies
+`$ bundle install`
 
-* Configuration
+#### Setup up database
+`$ rails db:setup`
+`$ rails db:migrate`
 
-* Database creation
+#### Setup up Figaro and Env variables
+- Rename your `config/database.yml.eg` file to `config/database.yml` and replace the content.
+- Rename your `config/application.yml.eg` file to `config/application.yml` and replace the content (if any) with the following:
+```
+PUSHER_APP_ID: 'your Pusher app ID'
+PUSHER_KEY: 'your pusher kep'
+PUSHER_SECRET: 'your pusher secret'
+PUSHER_CLUSTER: 'your pusher cluster'
+```
 
-* Database initialization
+Prerequisites
+------
+A basic knowledge of Ruby, MySQL and CoffeeScript
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Built With
+------
+- [Pusher](https://pusher.com) - A Ruby gem to interact with the Pusher REST API
