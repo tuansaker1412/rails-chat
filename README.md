@@ -12,11 +12,11 @@ Rails-chat
 `$ bundle install`
 
 #### Setup up database
+- Rename your `config/database.yml.eg` file to `config/database.yml` and replace the content.
 `$ rails db:setup`
 `$ rails db:migrate`
 
-#### Setup up Figaro and Env variables
-- Rename your `config/database.yml.eg` file to `config/database.yml` and replace the content.
+#### Setup up and Env variables
 - Rename your `config/application.yml.eg` file to `config/application.yml` and replace the content (if any) with the following:
 ```
 PUSHER_APP_ID: 'your Pusher app ID'
