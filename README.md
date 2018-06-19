@@ -13,8 +13,8 @@ Rails-chat
 
 #### Setup up database
 - Rename your `config/database.yml.eg` file to `config/database.yml` and replace the content.
-`$ rails db:setup`
-`$ rails db:migrate`
+- `$ rails db:setup`
+- `$ rails db:migrate`
 
 #### Setup up and Env variables
 - Rename your `config/application.yml.eg` file to `config/application.yml` and replace the content (if any) with the following:
